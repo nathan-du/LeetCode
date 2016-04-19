@@ -1,3 +1,5 @@
+import java.util.LinkedList;
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -7,7 +9,6 @@
  *     TreeNode(int x) { val = x; }
  * }
  */
-import java.util.LinkedList;
 public class Solution {
     public int minDepth(TreeNode root){  
         if(root == null) return 0;

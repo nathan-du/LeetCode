@@ -29,7 +29,7 @@ public class Solution {
             else break;
             
             sum = sum * 10 + num;
-            if(sum > Integer.MAX_VALUE || sum < Integer.MIN_VALUE) return plusMinus? Integer.MAX_VALUE : Integer.MIN_VALUE;
+            if(sum > Integer.MAX_VALUE) return plusMinus? Integer.MAX_VALUE : Integer.MIN_VALUE;
         }
         return plusMinus? (int)sum : (int)-sum;
     }

@@ -35,9 +35,9 @@ public class Solution {
                 {
                     ListNode temp = point.next;
                     point.next = temp.next;
+                    break;
                 }
-                if(point != null)
-                    point = point.next;
+                point = point.next;
             }
             return head;
         }

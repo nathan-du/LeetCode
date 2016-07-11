@@ -12,12 +12,12 @@ public class Solution {
         if(n - 2 >= 0) 
         {
             if(n - 2 == 0) times++;
-            recursion(n - 2);
+            else recursion(n - 2);
         }
         if(n - 1 >= 0) 
         {
             if(n - 1 == 0) times++;
-            recursion(n - 1);
+            else recursion(n - 1);
         }
     }
     

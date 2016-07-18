@@ -25,7 +25,7 @@ public class Solution {
                 if(tempTreeNode.right != null) tempTreeNodeList.add(tempTreeNode.right);
             }
             treeNode = new LinkedList<TreeNode>(tempTreeNodeList);
-            returnList.add(0,temp);
+            returnList.add(0, temp);
         }
         return returnList;
     }

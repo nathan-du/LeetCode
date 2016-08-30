@@ -4,10 +4,11 @@ public class Solution {
         int result = 1;
         for(int i = 2; i < n; i++) {
             int j = 2;
-            for(; j < Math.sqrt(i) + 1; j++) {
+            double judge = Math.sqrt(i) + 1;
+            for(; j < judge; j++) {
                 if(i % j == 0) break;
             }
-            if(j >= Math.sqrt(i) + 1) {
+            if(j >= judge) {
                     result++;
             }
         }

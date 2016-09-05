@@ -1,21 +1,18 @@
 class MyStack {
     LinkedList<Integer> list = new LinkedList<Integer>();
-    int top;
     // Push element x onto stack.
     public void push(int x) {
         list.add(x);
-        top = x;
     }
 
     // Removes the element on top of the stack.
     public void pop() {
-        list.remove();
-        if(list.peek() != null) top = list.peek();
+        list.remove(list.size() - 1);
     }
 
     // Get the top element.
     public int top() {
-        return top;
+        return list.peekLast();
     }
 
     // Return whether the stack is empty.

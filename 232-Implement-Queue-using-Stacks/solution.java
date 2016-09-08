@@ -16,6 +16,7 @@ class MyQueue {
     // Get the front element.
     public int peek() {
         if(outStack.empty()) {
+            while(!stack.empty())
             outStack.push(stack.pop());
         }
         return outStack.peek();

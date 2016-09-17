@@ -5,11 +5,11 @@
 
 public class Solution extends GuessGame {
     public int guessNumber(int n) {
-        int first = 1;
-        int last = n;
-        int mid = (first + last)/2;
+        long first = 1;
+        long last = n;
+        int mid = 0;
         while(first <= last) {
-            mid = (first + last)/2;
+            mid = (int)((first + last)/2);
             int judge = guess(mid);
             if(judge == 0) break;
             else if(judge == -1) last = mid - 1;

@@ -15,5 +15,5 @@ public class Solution {
             }
         }
         return judge? length + 1 : length;
-        }
+    }
 }
